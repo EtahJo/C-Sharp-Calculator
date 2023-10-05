@@ -11,35 +11,48 @@ namespace Calculator
             int secondNumber;
             string operation;
             float result;
+            string firstNumberText;
+            string secondNumberText;
 
             Console.WriteLine("This is a calculator");
             Console.Write("Enter Number : ");
-            firstNumber = int.Parse(Console.ReadLine());
+            firstNumberText = Console.ReadLine();
+         
             Console.Write("Operation:");
             operation = Console.ReadLine();
             Console.Write("Enter Second Number :");
-            secondNumber = int.Parse(Console.ReadLine());
+            secondNumberText = Console.ReadLine();
+            if (int.TryParse(firstNumberText,out firstNumber) && int.TryParse(secondNumberText,out secondNumber))
+            {
+                if (operation == "+")
+                {
+                    result = firstNumber + secondNumber;
+                }
+                else if (operation == "-")
+                {
+                    result = firstNumber - secondNumber;
 
-            if(operation== "+")
-            {
-                result = firstNumber + secondNumber;
-            }else if (operation == "-")
-            {
-                result = firstNumber - secondNumber;
+                }
+                else if (operation == "*")
+                {
+                    result = firstNumber * secondNumber;
+                }
+                else if (operation == "%")
+                {
+                    result = firstNumber % secondNumber;
+                }
+                else
+                {
+                    result = firstNumber / secondNumber;
+                }
 
-            }else if(operation == "*")
-            {
-                result = firstNumber * secondNumber;
-            }else if (operation == "%")
-            {
-                result = firstNumber % secondNumber;
+                Console.WriteLine("Answer for {0} {1} {2} is : {3}", firstNumber, operation, secondNumber, result);
             }
             else
             {
-                result = firstNumber / secondNumber;
+                Console.WriteLine("Your didn't enter a number");
             }
 
-            Console.WriteLine("Answer for {0} {1} {2} is : {3}",firstNumber,operation,secondNumber,result);
 
 
 
