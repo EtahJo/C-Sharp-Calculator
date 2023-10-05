@@ -1,25 +1,87 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  useState,
+  useRef
+} from "react"; 
+import "./App.css";
+import Form from "./components/Form";
+import {useUser} from './userContext';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const LoggedInUser =()=>{
+  const {user} = useUser()
+  return(
+    <div>
+      <p>Hello {user.name} </p>
     </div>
-  );
+  )
 }
 
-export default App;
+function App() { 
+  const inputRef = useRef(null); 
+  const resultRef = useRef(null); 
+  const [result, setResult] = useState(0); 
+ 
+  function plus(e) { 
+    e.preventDefault(); 
+    setResult((result) => result + Number(inputRef.current.value)); 
+  }; 
+ 
+  function minus(e) { 
+  	// Add the code for the minus function 
+    e.preventDefault();
+    setResult((result) => result - Number(inputRef.current.value));
+  };
+ 
+  function times(e) { 
+    // Add the code for the plus function 
+    e.preventDefault();
+    setResult((result) => result * Number(inputRef.current.value));
+  }; 
+ 
+  function divide(e) { 
+    // Add the code for the divide function 
+    e.preventDefault();
+    setResult((result)=> result/ Number(inputRef.current.value))
+  };
+ 
+  function resetInput(e) { 
+    // Add the code for the resetInput function 
+    e.preventDefault();
+    inputRef.current.value = 0;
+  }; 
+ 
+  function resetResult(e) { 
+  	// Add the code for the resetResult function 
+    e.preventDefault();
+    setResult(0)
+  }; 
+ 
+  return ( 
+    <div className="App"> 
+      <div> 
+        <h1>Simplest Working Calculator</h1> 
+      </div> 
+      <form> 
+        <p ref={resultRef}> 
+          {/* add the value of the current total */}
+          {result}
+        </p> 
+        <input
+          pattern="[0-9]" 
+          ref={inputRef} 
+          type="number" 
+          placeholder="Type a number" 
+        /> 
+        <button onClick={plus}>add</button>
+        <button onClick={minus}>Substract</button>
+        <button onClick={times}>Multiply</button>
+        <button onClick={divide}>Divide</button>
+        <button onClick={resetInput}>Reset Input</button>
+        <button onClick={resetResult}> Reset Result</button>
+      </form> 
+      <Form/>
+      <LoggedInUser/>
+    </div> 
+  ); 
+} 
+ 
+export default App; 

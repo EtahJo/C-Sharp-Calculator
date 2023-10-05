@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/etah/Desktop/coding/calculator/Calculator/Calculator.csproj": {}
+  },
+  "projects": {
+    "/Users/etah/Desktop/coding/calculator/Calculator/Calculator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/etah/Desktop/coding/calculator/Calculator/Calculator.csproj",
+        "projectName": "Calculator",
+        "projectPath": "/Users/etah/Desktop/coding/calculator/Calculator/Calculator.csproj",
+        "packagesPath": "/Users/etah/.nuget/packages/",
+        "outputPath": "/Users/etah/Desktop/coding/calculator/Calculator/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/etah/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

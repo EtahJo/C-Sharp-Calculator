@@ -1,0 +1,15 @@
+/Users/etah/Desktop/coding/calculator/Calculator/bin/Debug/net6.0/Calculator
+/Users/etah/Desktop/coding/calculator/Calculator/bin/Debug/net6.0/Calculator.deps.json
+/Users/etah/Desktop/coding/calculator/Calculator/bin/Debug/net6.0/Calculator.runtimeconfig.json
+/Users/etah/Desktop/coding/calculator/Calculator/bin/Debug/net6.0/Calculator.dll
+/Users/etah/Desktop/coding/calculator/Calculator/bin/Debug/net6.0/Calculator.pdb
+/Users/etah/Desktop/coding/calculator/Calculator/obj/Debug/net6.0/Calculator.csproj.AssemblyReference.cache
+/Users/etah/Desktop/coding/calculator/Calculator/obj/Debug/net6.0/Calculator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/etah/Desktop/coding/calculator/Calculator/obj/Debug/net6.0/Calculator.AssemblyInfoInputs.cache
+/Users/etah/Desktop/coding/calculator/Calculator/obj/Debug/net6.0/Calculator.AssemblyInfo.cs
+/Users/etah/Desktop/coding/calculator/Calculator/obj/Debug/net6.0/Calculator.csproj.CoreCompileInputs.cache
+/Users/etah/Desktop/coding/calculator/Calculator/obj/Debug/net6.0/Calculator.dll
+/Users/etah/Desktop/coding/calculator/Calculator/obj/Debug/net6.0/refint/Calculator.dll
+/Users/etah/Desktop/coding/calculator/Calculator/obj/Debug/net6.0/Calculator.pdb
+/Users/etah/Desktop/coding/calculator/Calculator/obj/Debug/net6.0/Calculator.genruntimeconfig.cache
+/Users/etah/Desktop/coding/calculator/Calculator/obj/Debug/net6.0/ref/Calculator.dll
